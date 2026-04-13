@@ -64,6 +64,7 @@ namespace EcommerceAPI.Controllers
         }
 
         // DELETE: api/products/5
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
