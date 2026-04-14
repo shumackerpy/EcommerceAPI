@@ -71,7 +71,7 @@ namespace EcommerceAPI.Controllers
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: creds
             );
-
+        
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
