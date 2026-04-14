@@ -75,6 +75,18 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+//CORS permite que se conecte a Angular a otro puerto, en este caso el 4200 que es el puerto por defecto de Angular
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -85,6 +97,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//CORS permite que se conecte a Angular a otro puerto, en este caso el 4200 que es el puerto por defecto de Angular
+app.UseCors("AllowAngular");
 
 // agregado para JWT
 app.UseAuthentication();
