@@ -14,7 +14,7 @@ namespace EcommerceAPI.Models
 
         [Required]
         public string Contrasena { get; set; }
-         
+
         public string Rol { get; set; } = "cliente";
     }
 }
