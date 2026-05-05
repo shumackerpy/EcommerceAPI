@@ -8,7 +8,7 @@ namespace EcommerceAPI.Models
 
         [Required]
         public string Nombre { get; set; }
-
+         
         [Required]
         public string Correo { get; set; }
 
