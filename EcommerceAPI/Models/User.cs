@@ -18,4 +18,3 @@ namespace EcommerceAPI.Models
         public string Rol { get; set; } = "cliente";
     }
 }
-   
