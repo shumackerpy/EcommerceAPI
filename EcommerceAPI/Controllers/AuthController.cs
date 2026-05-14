@@ -32,7 +32,7 @@ namespace EcommerceAPI.Controllers
 
             return Ok(user);
         }
-         d
+        
         // LOGIN
         [HttpPost("login")]
         public IActionResult Login(User login)
