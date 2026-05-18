@@ -47,7 +47,7 @@ namespace EcommerceAPI.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
-        }
+        } 
 
         // PUT: api/products/5
         [HttpPut("{id}")]
