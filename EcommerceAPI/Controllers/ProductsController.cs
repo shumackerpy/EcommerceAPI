@@ -42,7 +42,7 @@ namespace EcommerceAPI.Controllers
         // POST: api/products
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
-        {
+        { 
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
 
