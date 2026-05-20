@@ -38,7 +38,7 @@ namespace EcommerceAPI.Controllers
 
             return product;
         }
-
+         
         // POST: api/products
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
