@@ -18,7 +18,7 @@ namespace EcommerceAPI.Controllers
         public ProductsController(AppDbContext context)
         {
             _context = context;
-        }
+        } 
 
         // GET: api/products
         [HttpGet]
