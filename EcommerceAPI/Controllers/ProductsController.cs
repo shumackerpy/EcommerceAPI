@@ -19,7 +19,7 @@ namespace EcommerceAPI.Controllers
         {
             _context = context;
         }
-
+         
         // GET: api/products
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
