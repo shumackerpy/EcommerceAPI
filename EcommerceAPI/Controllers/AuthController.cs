@@ -22,7 +22,7 @@ namespace EcommerceAPI.Controllers
             _context = context;
             _config = config;
         }
-         
+          
         // REGISTRO 
         [HttpPost("register")]
         public async Task<IActionResult> Register(User user)
@@ -78,4 +78,3 @@ namespace EcommerceAPI.Controllers
 }
 
  
-  
